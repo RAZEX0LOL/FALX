@@ -1,0 +1,48 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.header{
+	background: url('./assets/bannerBackground2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.marketingBlock{
+	background: url('./assets/bannerMoon.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Base checkbox box */
+.checkbox-box {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 1.6px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* When the checkbox is checked, show the checkmark */
+input[type="checkbox"]:checked + label .checkbox-box .checkmark {
+  display: block;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"].sr-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Checkmark styling */
+.checkmark {
+  width: 14px; /* Adjust size to fit the box */
+  height: 14px;
+  background-color: white;
+  display: none;
+}
