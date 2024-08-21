@@ -14,7 +14,6 @@
 	background-repeat: no-repeat;
 }
 
-/* Base checkbox box */
 .checkbox-box {
   position: relative;
   display: inline-block;
@@ -25,12 +24,10 @@
   cursor: pointer;
 }
 
-/* When the checkbox is checked, show the checkmark */
 input[type="checkbox"]:checked + label .checkbox-box .checkmark {
   display: block;
 }
 
-/* Hide the default checkbox */
 input[type="checkbox"].sr-only {
   position: absolute;
   width: 0;
@@ -39,9 +36,8 @@ input[type="checkbox"].sr-only {
   pointer-events: none;
 }
 
-/* Checkmark styling */
 .checkmark {
-  width: 14px; /* Adjust size to fit the box */
+  width: 14px; 
   height: 14px;
   background-color: white;
   display: none;
