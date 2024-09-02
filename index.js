@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Начальный текст
-    updateDescription("Пожалуйста, наведите курсор на элементы справа, чтобы увидеть детали.");
+    // updateDescription("Пожалуйста, наведите курсор на элементы справа, чтобы увидеть детали.");
 
     items.forEach(item => {
         item.addEventListener("mouseenter", function() {
