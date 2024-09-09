@@ -1,9 +1,14 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .header{
-	background: url('./assets/FALX.mp4');
+	background: url('./assets/FALX.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -48,3 +53,8 @@ input[type="checkbox"].sr-only {
   word-break: break-word;
 }
 
+@media screen and (max-width: 1024px){
+    .header-h{
+        @apply text-3xl
+    }
+}
