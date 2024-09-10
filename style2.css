@@ -2,59 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.header{
-	background: url('./assets/FALX.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
+.header {
+    background: url('./assets/FALX.gif') center center no-repeat;
+    background-size: cover;
 }
 
-.marketingBlock{
-	background: url('./assets/bannerMoon.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.marketingBlock {
+    background: url('./assets/bannerMoon.png') center center no-repeat;
+    background-size: cover;
 }
 
 .checkbox-box {
-  position: relative;
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  border: 1.6px solid white;
-  background-color: transparent;
-  cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label .checkbox-box .checkmark {
-  display: block;
+    display: block;
 }
 
 input[type="checkbox"].sr-only {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .checkmark {
-  width: 14px; 
-  height: 14px;
-  background-color: white;
-  display: none;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    display: none;
 }
 
 .break-span {
-  white-space: normal;
-  word-break: break-word;
+    white-space: normal;
+    word-break: break-word;
 }
 
-@media screen and (max-width: 1024px){
-    .header-h{
-        @apply text-3xl
+@media (max-width: 1024px){
+    div > header > h1{
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    main > ul > li > span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #description{
+        position: static;
+    }
+    main > ul > li > span{
+        width: 40%;
+        font-size: 1.5rem;
     }
 }
